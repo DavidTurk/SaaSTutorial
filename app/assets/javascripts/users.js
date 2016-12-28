@@ -37,7 +37,7 @@ $(document).on('turbolinks:load', function(){
         
         //send card information to stripe
         if(error) {
-            
+            submitButton.prop('disabled', false).val("Sign Up");
         } else {
             Stripe.createToken({
                 number: ccNum,
