@@ -43,7 +43,7 @@ gem 'devise', '4.2.0'
 #Use Stripe for payment processing
 gem 'stripe', '1.48.0'
 
-#Use Figaro for EVN variables
+#Use Figaro for ENV variables
 gem 'figaro', '1.1.1'
 
 group :development, :test do
