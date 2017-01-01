@@ -1,11 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
+      <h1 class="text-center">DevMatch Community</h1>
       <ul class="list-unstyled">
         <% @users.each do |user| %>
           <% if user.profile %>
             <li>
-              <div class="well row <%= cycle('white-bg', '') %>">
+              <div class="well row">
                 <div class="col-sm-4 text-center">
                   <% if user.profile.avatar %>
                     <%= link_to user do %>
